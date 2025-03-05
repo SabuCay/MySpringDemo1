@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrapper{
+            height: 100px;
+            width: 400px;
+            border: 1px solid black;
+            margin: auto;
+            padding: 4px;
+        }
+        #left{
+            float: left;
+            width: 190px;
+            border: 1px solid blue;
+            padding: 4px;
+        }
+        #right{
+            float: left;
+            width: 198px;
+            border: 1px solid red;
+        }
+        #left form input{
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="left">
+            <form action="/personData" method="post">
+                <input type="text" name="first_name" placeholder="First name">
+                <input type="text" name="last_name" placeholder="Last name">
+                <input type="submit" value="Send data">
+            </form>
+        </div>
+        <div id="right">
+            <input type="checkbox" name="vihicle1" bike>I have a bike<br>
+            <input type="checkbox" name="vihicle2" car>I have a car<br>
+            <input type="checkbox" name="vihicle3" boat checked="checked">I have a boat<br>
+        </div>
+
+    </div>
+
+</body>
+</html>
